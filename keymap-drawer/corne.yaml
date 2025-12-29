@@ -1,9 +1,50 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ESC, LGUI, lower, SPACE, RET,
-    raise, RALT]
+  default:
+  - '`'
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - {t: ESCAPE, h: LCTRL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - LGUI
+  - {t: TAB, h: LGUI}
+  - {t: ENTER, h: lower}
+  - {t: SPACE, h: raise}
+  - {t: BACKSPACE, h: RIGHT GUI}
+  - RALT
   lower:
-  - TAB
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -14,39 +55,39 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
+  - {t: ▽, type: trans}
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - VOLUME DOWN
+  - VOLUME UP
+  - MUTE
   - LEFT
   - DOWN
   - UP
   - RIGHT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&sys_reset'
   - '&studio_unlock'
   - '&studio_unlock'
+  - STOP
+  - PREVIOUS
+  - PLAY PAUSE
+  - NEXT
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LGUI
   - {type: held}
-  - SPACE
-  - RET
   - {t: ▽, type: trans}
-  - RALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   raise:
-  - TAB
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -58,7 +99,7 @@ layers:
   - (
   - )
   - BSPC
-  - LCTRL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -70,7 +111,7 @@ layers:
   - ']'
   - \
   - '`'
-  - LSHFT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -82,9 +123,9 @@ layers:
   - '}'
   - '|'
   - '~'
-  - LGUI
   - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - RALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
