@@ -16,9 +16,9 @@ layers:
   - {t: ESCAPE, h: LCTRL}
   - A
   - S
-  - D
-  - F
-  - G
+  - {t: D, h: LEFT GUI}
+  - {t: F, h: lower}
+  - {t: G, h: raise}
   - H
   - J
   - K
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - ESC
-  - LGUI
+  - ENTER
+  - Ctl+LEFT CONTROL
   - {t: TAB, h: LGUI}
-  - {t: ENTER, h: lower}
-  - {t: SPACE, h: raise}
+  - {t: SPACE, h: '3'}
+  - SPACE
   - {t: BACKSPACE, h: RIGHT GUI}
-  - RALT
+  - GLOBE
   lower:
   - {t: ▽, type: trans}
   - '1'
@@ -60,7 +60,7 @@ layers:
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
   - VOLUME DOWN
-  - VOLUME UP
+  - {t: VOLUME UP, type: held}
   - MUTE
   - LEFT
   - DOWN
@@ -82,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,7 +104,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - '-'
   - '='
   - '['
@@ -126,6 +126,58 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '3':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [1, 2]
+  k: TAB
+- p: [13, 14]
+  k: LEFT SHIFT
+- p: [21, 22]
+  k: RIGHT SHIFT
+- p: [20, 21]
+  k: ENTER
