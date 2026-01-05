@@ -14,32 +14,32 @@ layers:
   - P
   - BSPC
   - {t: ESCAPE, h: LCTRL}
-  - A
-  - S
+  - {t: A, h: LEFT CONTROL}
+  - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT GUI}
   - {t: F, h: lower}
   - {t: G, h: raise}
-  - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: H, h: raise}
+  - {t: J, h: lower}
+  - {t: K, h: RIGHT GUI}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: RIGHT CONTROL}
   - ''''
   - LSHFT
   - Z
-  - X
+  - {t: X, h: LEFT ALT}
   - C
   - V
   - B
   - N
   - M
   - ','
-  - .
+  - {t: ., h: RIGHT ALT}
   - /
   - ENTER
   - Ctl+LEFT CONTROL
   - {t: TAB, h: LGUI}
-  - {t: SPACE, h: '3'}
+  - {t: ENTER, h: '3'}
   - SPACE
   - {t: BACKSPACE, h: RIGHT GUI}
   - GLOBE
